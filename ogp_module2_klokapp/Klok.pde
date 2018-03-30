@@ -3,9 +3,9 @@ class Klok {
   private Teller urenTeller;
 
   public Klok(float x, float y, float breedte) {
-    float hoogte = breedte * 0.4f;
-    urenTeller = new Teller(24, x, y, breedte / 2, hoogte);
-    minutenTeller = new Teller(60, x + breedte / 2, y, breedte / 2, hoogte);
+    
+    urenTeller = new Teller(24, x, y, breedte / 2);
+    minutenTeller = new Teller(60, x + breedte / 2, y, breedte / 2);
   }
 
   Klok(float x, float y, float breedte, int uren, int minuten) {

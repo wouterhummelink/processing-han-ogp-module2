@@ -2,12 +2,12 @@ public class Teller {
   private int maximum, waarde;
   private float x, y, breedte, hoogte;
 
-  public Teller(int maximum, float x, float y, float breedte, float hoogte) {
+  public Teller(int maximum, float x, float y, float breedte) {
     this.maximum = maximum;
     this.x = x;
     this.y = y;
     this.breedte = breedte;
-    this.hoogte = hoogte;
+    this.hoogte = breedte * 0.8f;
   }
 
   public void tik() {
